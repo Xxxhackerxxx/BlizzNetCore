@@ -15,7 +15,15 @@
 #                                                                                          #
 ############################################################################################
 
-~>XX.07.2012:
+~>XX.08.2012:
+
+- Fix prayer of mending bonus from t9 healing 2 piece set. (Merge to TC (Apr 27, 2012))
+- Correct tick damage for health funnel.
+- Fix wrong target in Bloodthirst spell script.
+- Fixed creature passengers falling off vehicles at client side.
+- Rogue T9 2P - Should proc only from Rupture ticks.
+
+~>30.07.2012:
 
 - Fix item Mysterious Egg.
 - Fix Lifebloom.

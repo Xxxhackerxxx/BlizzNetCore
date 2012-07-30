@@ -255,8 +255,9 @@ class spell_pal_holy_shock : public SpellScriptLoader
 
         class spell_pal_holy_shock_SpellScript : public SpellScript
         {
-            PrepareSpellScript(spell_pal_holy_shock_SpellScript)
-            bool Validate(SpellInfo const* spellEntry)
+            PrepareSpellScript(spell_pal_holy_shock_SpellScript);
+
+            bool Validate(SpellInfo const* spell)
             {
                 if (!sSpellMgr->GetSpellInfo(PALADIN_SPELL_HOLY_SHOCK_R1))
                     return false;
@@ -288,10 +289,9 @@ class spell_pal_holy_shock : public SpellScriptLoader
             SpellCastResult CheckCast()
             {
                 Player* caster = GetCaster()->ToPlayer();
-                if (GetTargetUnit())
-                    if (Player* target = GetTargetUnit()->ToPlayer())
-                        if (caster->GetTeam() != target->GetTeam() && !caster->IsValidAttackTarget(target))
-                            return SPELL_FAILED_BAD_TARGETS;
+                if (Unit* target = GetTargetUnit())
+                    if (!caster->IsFriendlyTo(target) && !caster->IsValidAttackTarget(target))
+                        return SPELL_FAILED_BAD_TARGETS;
                 return SPELL_CAST_OK;
             }
 
