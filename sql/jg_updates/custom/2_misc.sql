@@ -145,3 +145,7 @@ INSERT INTO `spell_script_names` (`spell_id`,`ScriptName`) VALUES
 (72528,'spell_sindragosa_mystic_buffet'),
 (72529,'spell_sindragosa_mystic_buffet'),
 (72530,'spell_sindragosa_mystic_buffet');
+
+-- Fix item Mysterious Egg.
+UPDATE item_template SET Duration= -590400 WHERE entry=39878;
+UPDATE item_template SET Duration= -590400 WHERE entry=44717;
