@@ -17,6 +17,7 @@
 
 ~>XX.08.2012:
 
+- Fix Lord Marrowgar - Bone Spike.
 - Fix DynamicObject AoE effects for invisible targets e.g. Flare.
 - Fix prayer of mending bonus from t9 healing 2 piece set. (Merge to TC (Apr 27, 2012))
 - Correct tick damage for health funnel.
