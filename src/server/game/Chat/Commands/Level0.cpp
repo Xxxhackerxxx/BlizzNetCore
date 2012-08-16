@@ -103,7 +103,7 @@ bool ChatHandler::HandleServerInfoCommand(const char* /*args*/)
 
     //PSendSysMessage(_FULLVERSION);
     PSendSysMessage("Core: BlizzNetCore");
-    PSendSysMessage("Rev: XX.07.2012");
+    PSendSysMessage("Rev: XX.08.2012");
     PSendSysMessage("Sponsors: http://BlizzNet.PL");
     PSendSysMessage(LANG_CONNECTED_PLAYERS, playersNum, maxPlayersNum);
     PSendSysMessage(LANG_CONNECTED_USERS, activeClientsNum, maxActiveClientsNum, queuedClientsNum, maxQueuedClientsNum);

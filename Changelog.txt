@@ -17,6 +17,10 @@
 
 ~>XX.08.2012:
 
+- Fix delay.
+
+~>13.08.2012:
+
 - Fix item Mysterious Egg / Disgusting Jar (No DC!).
 - Fix Lord Marrowgar - Bone Spike.
 - Fix DynamicObject AoE effects for invisible targets e.g. Flare.
