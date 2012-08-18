@@ -4981,7 +4981,7 @@ void AuraEffect::HandleAuraDummy(AuraApplication const* aurApp, uint8 mode, bool
                         if (caster)
                         {
                             heal = caster->SpellHealingBonusDone(target, GetSpellInfo(), heal, HEAL); 
-                            heal = target->SpellHealingBonusTaken(caster, GetSpellInfo(), heal, HEAL);
+                            heal = target->SpellHealingBonusTaken(GetSpellInfo(), heal, HEAL);
                         }
                         heal *= stack;
                         target->CastCustomSpell(target, 33778, &heal, NULL, NULL, true, NULL, this, GetCasterGUID());
