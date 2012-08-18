@@ -17,6 +17,7 @@
 
 ~>XX.08.2012:
 
+- Fix Lifebloom (Beta!) by Diton.
 - Separation caster/target part damage/heal bonus calculations.
 - Fix Killing Spree.
 - Fix delay.
