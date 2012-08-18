@@ -26,6 +26,8 @@ void AddSC_example_misc();
 void AddSC_example_commandscript();
 //Hunter Pet Vendor
 void AddSC_npc_hunterpetvendor();
+// Transmogrification 
+void AddSC_NPC_Transmogrify();
 
 //TeleNPC2
 void AddSC_npc_teleport();
@@ -1277,5 +1279,7 @@ void AddCustomScripts()
     AddSC_npc_teleport();
     //Hunter Pet Vendor
     AddSC_npc_hunterpetvendor();
+    // Transmogrification 
+    AddSC_NPC_Transmogrify();
 #endif
 }

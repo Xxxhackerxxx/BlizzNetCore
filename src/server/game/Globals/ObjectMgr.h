@@ -870,6 +870,7 @@ class ObjectMgr
         void LoadItemLocales();
         void LoadItemSetNames();
         void LoadItemSetNameLocales();
+        void LoadTransmogrifications();
         void LoadQuestLocales();
         void LoadNpcTextLocales();
         void LoadPageTextLocales();
@@ -1206,6 +1207,8 @@ class ObjectMgr
         void LoadFactionChangeItems();
         void LoadFactionChangeSpells();
         void LoadFactionChangeReputations();
+
+        ItemFakeEntryContainer _itemFakeEntryStore;
 
     private:
         // first free id for selected id type
