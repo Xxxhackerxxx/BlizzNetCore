@@ -17,6 +17,7 @@
 
 ~>XX.08.2012:
 
+- Fix Killing Spree.
 - Fix delay.
 
 ~>13.08.2012:

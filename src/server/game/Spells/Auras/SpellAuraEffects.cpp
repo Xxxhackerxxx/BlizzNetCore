@@ -3425,6 +3425,7 @@ void AuraEffect::HandleModMechanicImmunity(AuraApplication const* aurApp, uint8 
             target->ApplySpellImmune(GetId(), IMMUNITY_MECHANIC, MECHANIC_ROOT, apply);
             target->ApplySpellImmune(GetId(), IMMUNITY_MECHANIC, MECHANIC_STUN, apply);
             break;
+        case 51690: // Killing Spree
         case 34471: // The Beast Within
         case 19574: // Bestial Wrath
             mechanic = (1 << MECHANIC_SNARE) | (1 << MECHANIC_ROOT)
