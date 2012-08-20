@@ -54,7 +54,7 @@ public:
 
         if(!sObjectMgr->GetItemTemplate(TokenEntry))
         {
-            sLog->outError("Transmogrification.TokenEntry (%u) does not exist. Using default.", TokenEntry);
+            sLog->outError(LOG_FILTER_GENERAL, "Transmogrification.TokenEntry (%u) does not exist. Using default.", TokenEntry);
             TokenEntry = 49426;
         }
     }
